@@ -1,0 +1,11 @@
+name: test custom runner
+on: push
+
+jobs:
+  init:
+    runs-on: self-hosted
+    steps:
+      - name: test 1
+        run: echo "Test 12"
+      - name: accessing vars
+        run: echo $HOATNAME
