@@ -1,0 +1,11 @@
+name: test self host
+on: [push]
+
+jobs:
+  init:
+    runs-on: self-hosted
+    steps:
+      - name: test 1
+        run: echo "hello test 1"
+      - name: test 2
+        run: echo "hello test 2"
