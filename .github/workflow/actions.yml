@@ -1,5 +1,5 @@
 name: test self host
-on: [push]
+on: push
 
 jobs:
   init:
@@ -9,3 +9,5 @@ jobs:
         run: echo "hello test 1"
       - name: test 2
         run: echo "hello test 2"
+      - name: var
+        run: echo $HOSTNAME
